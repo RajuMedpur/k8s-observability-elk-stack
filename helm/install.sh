@@ -15,5 +15,5 @@ helm install elasticsearch elastic/elasticsearch
 helm install kibana elastic/kibana
 
 # Deploy Fluentd (you can use a custom chart or manifest)
-kubectl apply -f manifests/fluentd-configmap.yaml
+kubectl apply -f ../manifests/fluentd-configmap.yaml
 kubectl apply -f https://raw.githubusercontent.com/fluent/fluentd-kubernetes-daemonset/master/fluentd-daemonset-elasticsearch-rbac.yaml
